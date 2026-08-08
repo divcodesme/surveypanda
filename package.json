@@ -1,0 +1,18 @@
+{
+  "name": "surveypanda",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Open-source survey builder and response collection platform.",
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "api",
+    "web"
+  ],
+  "scripts": {
+    "dev": "sh scripts/dev.sh",
+    "test": "sh scripts/test.sh",
+    "db:migrate": "sh scripts/db-migrate.sh",
+    "lint": "yarn workspaces run lint",
+    "build": "sh scripts/build.sh"
+  }
+}
